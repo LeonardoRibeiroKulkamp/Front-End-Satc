@@ -1,40 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+
 * {
+    font-family: "DM Sans", sans-serif;
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+
+.container{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.container-msg{
+/* Container Mensagem */
+.hero{
     height: 100vh;
     width: 50%;
-    background-color: #06402b;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.container-dados{
-    height: 100vh;
-    width: 50%;
+    background-color: #0f5830;
 }
 
-
-/* Container Mensagem */
-.container-msg p{
-    max-width: 75%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+.hero p{
+    display: block;
+    max-width: 70%;
+    font-size: 250%;
+    font-weight: 400;
     color: #fff;
 }
-.container-msg p span{
-    font-size: 20px;
+.hero p span{
+    display: block;
+    font-size: 17px;
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+
+/* FORMULARIO */
+.formulario {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario > div {
+    width: 44%;
+}
+
+.formulario h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.formulario > div > p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 11%;
+    line-height: 1.4;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.formulario label a {
+    float: right;
+    font-size: 13px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 13px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    width: 100%;
+    margin-top: 11%;
+    padding: 14px;
+    background-color: #0f5830;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formulario form + p {
+    margin-top: 10%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.formulario a {
+    color: #0f5830;
+    text-decoration: none;
+}
+.formulario a:hover {
+    text-decoration: underline;
 }

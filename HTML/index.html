@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="../Styles/index.css">
 </head>
 <body>
-    <div class="container-msg">
-        <p>
-            "Educação não é um aprendizado de fatos, mas treinamento para pensar."" <br>
-            <span>Albert Einstein</span>
-        </p>
-    </div>
-    <div class="container-dados">   
-        <div>
-            <h1>Bem-vindo de volta</h1>
-            <p>Por favor, insira suas credenciais para acessar um painel acadêmico</p>
+    <div class="container">
+        <div class="hero">
+            <p>
+                "Educação não é um aprendizado de fatos, mas treinamento para pensar." <br>
+                <span>Albert Einstein</span>
+            </p>
         </div>
-        <div>
-            <form action="logar" method="post">
-                <label for="email">Endereço de e-mail</label>
-                <input type="text" name="email" id="email" placeholder="user@gmail.com">
-                <label for="senha">Senha</label>
-                <a href="esqueceuSenha.html">Esqueceu?</a>
-                <input type="password" name="senha" id="senha" placeholder="*********">
-                <button type="submit">Entrar</button>
-            </form>
-            <p>Esqueceu a sua senha? <a href="cadastro1.html">Registre-se agora.</a></p>
+        <div class="formulario">   
+            <div>
+                <h1>Bem-vindo de volta</h1>
+                <p>Por favor, insira suas credenciais para acessar um painel acadêmico</p>
+                <form action="logar" method="post">
+                    <label for="email">Endereço de e-mail</label>
+                    <input type="text" name="email" id="email" placeholder="user@gmail.com">
+                    <label for="senha">Senha <a href="esqueceuSenha.html">Esqueceu?</a></label>
+                    <input type="password" name="senha" id="senha" placeholder="*********">
+                    <button type="submit">Entrar</button>
+                </form>
+                <p>Esqueceu a sua senha? <a href="cadastro1.html">Registre-se agora.</a></p>
+            </div>
         </div>
     </div>
 </body>
