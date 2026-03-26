@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../Styles/index.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/mobile.css">
 </head>
 <body>
     <div class="container">
@@ -15,17 +16,17 @@
             </p>
         </div>
         <div class="formulario">
-            <div>   
+            <div>
                 <h1>Cadastre-se</h1>
-                <p>Passo 1 de 2 <br>
-                Por favor, insira seu CPF para proseguir.</p>
-                <div>
-                    <form action="cadastro2.html">
-                        <label for="cpf">CPF</label>
-                        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
-                        <button type="submit">Prosseguir</button>
-                    </form>
-                </div>
+                <p>
+                    Passo 1 de 2. <br/>
+                    Por favor insira seu CPF para prosseguir.
+                </p>
+        
+                <label for="cpf">CPF</label>
+                <input name="cpf" id="cpf" type="text" placeholder="000.000.000-00" />
+        
+                <a href="cadastro2.html">Prosseguir</a>
             </div>
         </div>
     </div>
