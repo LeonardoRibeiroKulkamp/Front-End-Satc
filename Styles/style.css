@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Datatype:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0; 
+    margin: 0;
+   
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+}
+
+.container > div {
+    width: 50%;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: "Datatype", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    background-color: #0F5830;
+}
+
+.hero p{
+    display: block;
+    width: 80%;
+    font-size: 3rem;
+}
+
+.hero p span{
+    display: block;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario > div{
+    width: 50%;
+}
+
+.formulario label{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.formulario label a{
+    float: right;
+}
+
+.formulario input{
+    display: block;
+    width: 100%;
+    padding: 16px 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+.formulario button{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: #0F5830;
+    cursor: pointer;
+}
+
+.formulario .registre-se{
+    text-align: center;
+}
+
+.formulario a{
+    color: #0F5830;
+    text-decoration: none;
+    
+}
+
+.formulario a:hover{
+    text-decoration: underline;
+}
+
+.formulario > div > a{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 16px 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: #0F5830;
+    
+}
+.formulario > div > a:hover{
+    text-decoration: none
+}
+
+
+
+/* Dashboard */
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededed;
+}
+
+.dashboard__container{
+    width: 80%;
+    height: 88vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
+    background-color: #fff;
+}
+.menu__body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu__title{
+    margin: auto 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.8rem;
+    font-optical-sizing: auto;
+    color: #0F5830;
+}
+.menu__title span{
+    font-size: 1.2rem;
+    color: #000;
+    display: block;
+}
+
+.menu__links{
+    display: flex;
+}
+
+.menu__item{
+    display: inline-block;
+    padding: 0 10px;
+    color: #999999;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu__item--active{
+    color: #0F5830;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu__item:hover, .menu__item--active:hover{
+    text-decoration: underline;
+}
+
+
+.welcome{
+    padding: 40px;
+}
+
+.welcome h2{
+    margin: 0;
+    font-size:  32px;
+    color: #0F5830;
+}
+
+.welcome p{
+    color: #999999;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    margin: 30px 0;
+    background-color: #fff;
+    border: 1px solid #CCCCCC;
+    border-radius: 4ox;
+}
+
+.card__body{
+    flex-grow: 1;
+}
+
+.card__badge{
+    display:  inline-block;
+    padding: 8px;
+    background-color: #CCCCCC;
+    color: #0F5830;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.card__title{
+    margin: 0;
+    color: #0F5830;
+}
+
+.card__description{
+    margin: 0;
+    padding-top: 8px;
+    color: #999999;
+}
+
+.card__progress{
+    height: 11px;
+    width: 75%;
+    margin-top: 16px;
+    background-color: #CCCCCC;
+    border-radius: 8px;
+    color: #fff;
+    text-align: right;
+    font-size: 9px;
+}
+
+.card__progress div{
+    width: 65%;
+    height: 11px;
+    background-color: #0F5830;
+    border-radius: 8px;
+}
+
+.card__button{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    padding: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: #0F5830;
+    cursor: pointer;
+}
