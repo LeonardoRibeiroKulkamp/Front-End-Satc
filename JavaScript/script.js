@@ -17,6 +17,8 @@ function GetMsg(){
         return 'Boa noite'
     }
 }
+
+console.log(GetMsg(), pessoa.nome)
 const greeting = document.getElementById('greeting');
 greeting.textContent = `${GetMsg()}, ${pessoa.nome}`;
 
